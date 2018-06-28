@@ -1,0 +1,18 @@
+fieldset.skills-legend {
+  border: 1px groove #e5e5e53d;
+  padding: 0 1.4em 1.4em 1.4em;
+  -webkit-box-shadow:  0px 10px 0px 0px #000;
+  box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.skills-legend {
+  text-align: left;
+  width: auto;
+  padding: 0 10px;
+  border-bottom: none;
+  font-size: 14px;
+}
+
+.form-element{
+  margin-bottom: 2%;
+}

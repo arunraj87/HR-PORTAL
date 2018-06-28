@@ -1,0 +1,16 @@
+<form class="form-element col-sm-6" novalidate style="width:43%;" [formGroup]="primarySkillsForm" novalidate>
+
+  <fieldset class="skills-legend">
+    <legend class="skills-legend">Primary Skills</legend>
+      <div *ngFor="let primarySkillInput of primarySkillInputs; let in=index">
+        <div class="mat-action-row">
+          <mat-form-field class="form-element full-width">
+            <mat-label>Primary Skill {{in+1}}</mat-label>
+            <input matInput formControlName="{{primarySkillInput.value}}">
+          </mat-form-field>
+        </div>
+      </div>
+    <span class="pull-left" style="margin-top: 3%;">Add another primary skill</span>
+    <button (click)="addPrimarySkill()" mat-mini-fab style="font-size: 30px;" color="primary">+</button>
+  </fieldset>
+</form>
